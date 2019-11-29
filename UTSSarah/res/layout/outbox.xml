@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	  <TextView
+        android:id="@+id/ketpesankeluar"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Jumlah pesan yang keluar (outbox) : "
+		android:textStyle="italic"
+		/>
+	   <TextView 
+        android:id="@+id/Totaloutbox"
+        android:text="0"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/ketpesankeluar"
+        />
+    
+    <ListView
+        android:id="@+id/messagelist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ketpesankeluar"
+        />            
+</RelativeLayout>

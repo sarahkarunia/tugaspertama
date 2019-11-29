@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="8dp">
+    
+
+    <TextView
+        android:id="@+id/tnama"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Nama     "
+		android:textStyle="bold"
+		android:padding="10dp"
+		android:layout_marginTop="50dp"/>
+    <EditText
+        android:id="@+id/ednama"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Masukkan Nama Anda"
+		android:layout_toRightOf="@+id/tnama"
+		android:layout_marginTop="50dp"/>
+    
+    <TextView
+        android:id="@+id/tno"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Phone    "
+		android:textStyle="bold"
+		android:layout_below="@+id/tnama"
+		android:padding="10dp"
+		/>
+      <EditText
+        android:id="@+id/edno"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/ednama"
+		android:layout_toRightOf="@+id/tno"
+		android:hint="Masukkan Nomor Anda"/>
+      <EditText
+        android:id="@+id/edemail"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/edno"
+		android:layout_toRightOf="@+id/tno"
+		android:hint="Masukkan Email Anda"/>
+    
+    <TextView
+        android:id="@+id/talamat"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Address"
+		android:textStyle="bold"
+		android:layout_below="@+id/temail"
+		android:padding="10dp"/>
+    <EditText
+        android:id="@+id/edalamat"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/edemail"
+		android:layout_toRightOf="@+id/talamat"
+		android:hint="Masukkan Alamat Anda"/>
+    
+    <TextView
+        android:id="@+id/temail"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Email     "
+		android:textStyle="bold"
+		android:layout_below="@+id/tno"
+		android:padding="10dp"/>
+     <EditText
+        android:id="@+id/eddob"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/edalamat"
+		android:layout_toRightOf="@+id/talamat"
+		android:hint="Masukkan Tgl Lahir Anda"/>
+    
+    <TextView
+        android:id="@+id/tdob"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Tgl Lahir"
+		android:textStyle="bold"
+		android:layout_below="@+id/talamat"
+		android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/bsave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edalamat"
+        android:text="Simpan" 
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+</RelativeLayout>

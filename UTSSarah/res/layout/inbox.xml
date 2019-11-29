@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="14dp">
+    
+     <Button 
+     	android:id="@+id/btkirim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kirim Pesan Baru"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textSize="16sp"
+        android:textStyle="bold" 
+       />
+     
+    <TextView
+        android:id="@+id/ketjlh"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Jumlah Inbox yang masuk : "
+		android:textStyle="italic"
+		android:layout_below="@+id/btkirim"
+		/>
+    <TextView 
+        android:id="@+id/Totalinbox"
+        android:text="0"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/ketjlh"
+        android:layout_below="@+id/btkirim"
+        />
+    
+    <ListView
+        android:id="@+id/messagelist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ketjlh"
+        />                    
+    
+
+</RelativeLayout>
