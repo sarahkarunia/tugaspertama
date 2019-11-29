@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+ 
+     <Button 
+     	android:id="@+id/btadd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Contact"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textSize="16sp"
+        android:textStyle="bold" 
+       />
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+      	android:layout_below="@+id/btadd"/>
+</RelativeLayout>
